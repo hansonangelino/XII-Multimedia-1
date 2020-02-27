@@ -1,0 +1,11 @@
+#copyright {
+	display: block;
+	margin: 40px 0px 8px 0px;
+	text-align: center;
+}
+#copyright p{
+	font-family: arial;
+	opacity: 75%;
+	color: white;
+	margin: 0!important;
+}

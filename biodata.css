@@ -1,0 +1,52 @@
+.biodata {
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 32px;
+	background-image: url(biodata.jpg);
+	background-size: cover;
+	height: 540px;
+	width: 100%;
+}
+.biodata_head p{
+	font-family: Helvetica;
+	font-size: 48px;
+	margin: 8px 0px 8px 0px;
+}
+.biodata_desc p{
+	font-family: Helvetica;
+	font-size: 16px;
+	margin-top: 12px;
+}
+.card_bio {
+	margin: 48px 196px 16px 196px;
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr;
+	grid-gap: 64px;
+}
+.card {
+	display: inline-block;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px 0 rgba(0,0,0,0.10),
+				0px 0px 20px 0 rgba(0,0,0,0.15);
+}
+.card p{
+	margin: 0;
+	font-family: Helvetica;
+}
+.card_pic img{
+	width: 75%;
+	padding: 16px 0px 8px 0px;
+}
+.button_bio {
+	margin: 32px 8px;
+	display: inline-block;
+	background-image: linear-gradient(-45deg, #ff158b, #ffa304);
+	padding: 12px 56px;
+	font-family: Helvetica;
+	font-size: 18px;
+	border-radius: 28px;
+	transition: 0.25s;
+	opacity: 100%;
+}

@@ -1,0 +1,56 @@
+.contact {
+	display: block;
+	background-image: url(contact.jpg);
+	width: 100%;
+	height: 540px;
+	background-size: cover;
+}
+.contact_desc {
+	margin-top: 64px;
+	padding-top: 8px;
+}
+.contact_desc p{
+	text-align: center;
+	font-size: 48px;
+	font-family: Helvetica;
+	margin: 0;
+}
+form {
+	margin-top: 24px;
+}
+.form_all {
+	display: block;
+	text-align: center;
+}
+.form_field {
+	margin: 4px 0px 8px 0px;
+	padding: 8px 8px 8px 8px;
+/*	border-radius: 10px;*/
+	display: inline-block;
+	width: 50%;
+	border-width: 4px;
+	border-image: linear-gradient(45deg , #ff158b, #ffa304);
+	border-image-slice: 1;
+}
+.form_comment {
+	margin: 4px 0px 4px 0px;
+	padding: 8px 8px 160px 8px;
+	padding-bottom: 160px;
+	display: inline-block;
+	width: 50%;
+	border-width: 4px;
+	border-image: linear-gradient(60deg , #ff158b, #ffa304);
+	border-image-slice: 1;
+}
+.submit {
+	margin-top: 16px;
+	display: inline-block;
+}
+.button_submit {
+	opacity: 100%;
+	transition: 0.25s;
+	display: block;
+	padding: 8px 72px;
+	background-image: linear-gradient(45deg, #503C9C, #2B84DE);
+	border-radius: 20px;
+}

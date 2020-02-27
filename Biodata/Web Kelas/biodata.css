@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  display: block;
+}
+.bgimage img{
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+}
+.scroll_menu {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -39%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 1000px;
+  height: 500px;
+  animation-name: opacity;
+  animation-duration: 1.5s;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 40px 40px 40px;
+  width: auto;
+}
+.grid-item {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 32px 32px 32px 32px;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px 0.1px grey;
+  border-radius: 28px;
+  width: auto;
+  box-shadow: 0px 0px 20px 0 rgba(0,0,0,0.10),
+              0px 0px 20px 0 rgba(0,0,0,0.15);
+}
+p.title{
+  text-align: center;
+  font-family: Helvetica;
+  display: block;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 60.67px;
+}
+.name{
+  font-family: Helvetica;
+  font-weight: 900;
+  font-size: 16px;
+  padding-left: 18px;
+  margin-bottom: 16px;
+}
+.text{
+  padding-left: 150px;
+  font-family: Helvetica;
+  font-size: 12px;
+}
+img.circle {
+  border-radius: 16%;
+  width: 114px;
+  margin-left: 16px;
+}
+img.karya{
+  padding: 16px 8px 0px 0px;
+  width: 50px;
+}
+@-webkit-keyframes opacity {
+  from {opacity: 0%} 
+  to {opacity: 100%}
+}
+@keyframes opacity {
+  from {opacity: 0%}
+  to {opacity: 100%}
+}

@@ -1,0 +1,38 @@
+.portfolio {
+	background-image: url("movie.jpg");
+	background-size: cover;
+	display: block;
+	height: 540px;
+	
+}
+.portfolio_menu {
+	display: block;
+	float: right;
+	margin: 88px 64px 16px 16px;
+}
+.portfolio_menu p{
+	color: white;
+	margin: 0;
+	padding-top: 48px;
+	text-align: right;
+}
+.portfolio_desc {
+	display: block;
+}
+.portfolio_desc p{
+	padding-top: 8px;
+}
+.button_portfolio {
+	display: block;
+	float: right;
+	opacity: 100%;
+	transition: 0.25s;
+	text-decoration: none;
+	margin-top: 128px;
+	padding: 12px 56px;
+	font-size: 18px;
+	color: white;
+	font-family: Helvetica;
+	border-radius: 28px;
+	background-image: linear-gradient(-45deg, #ff158b, #ffa304);
+}
