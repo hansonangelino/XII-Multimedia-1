@@ -3,8 +3,10 @@
 <head>
 	<link rel="stylesheet" href="brandkelas.css">
 	<link rel="stylesheet" href="index.css">
-	<link rel="icon" href="logo.png">
 	<link rel="stylesheet" href="hover.css">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="modal.css">
+	<link rel="icon" href="logo.png">
 	<title>XII MULTIMEDIA 1</title>
 </head>
 <body style="margin: 0">
@@ -20,25 +22,94 @@
 
 	<div class="brand_all">
 		<div class="brand_pic">
-			<a href="">
-				<img src="Slurpy.png" alt="">
-			</a>
+			<img src="Slurpy.png" alt="" id="myBtn">
 		</div>
 		<div class="brand_pic">
-			<a href="">
-				<img src="untukamoo.png" alt="">
-			</a>
+			<img src="untukamoo.png" alt="" id="myBtn">
 		</div>
 		<div class="brand_pic">
-			<a href="">
-				<img src="Sepoi.png" alt="">
-			</a>
+			<img src="Sepoi.png" alt="" id="myBtn">
 		</div>
 		<div class="brand_pic">
-			<a href="">
-				<img src="Jelly.png" alt="">
-			</a>
+			<img src="Jelly.png" alt="" id="myBtn">
 		</div>
+
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <span class="close" style="margin-top: 8px;">&times;</span>
+		      <h2 style="letter-spacing: 1px;">Hi there, what's your name?</h2>
+		    </div>
+		    <div class="modal-body">
+					<div class="box">
+						<form action="index.html" autocomplete="off" id="user_login">
+							<p>Username</p>
+							<input type="text" name="Name" placeholder="your name" class="form" required="name" style="margin-top: 8px">
+							<p style="padding-top: 16px">Password</p>
+							<input type="password" name="Password" placeholder="example@abc123" id="user_pass" class="form" required="pass" style="margin-top: 8px">
+							<div class="hide_pass">
+								<p onclick="showPass()" class="showpass" style="; font-size: 12px; opacity: 50%">Show/Hide password</p>
+							</div>
+							<input type="submit" class="button" value="Login" onclick="myFunction()">
+						</form>
+					</div>
+
+					<script>
+						// pass_hider
+						function showPass() {
+							var x =
+							document.getElementById('user_pass');
+							if (x.type === "password") {
+								x.type = "text";
+							}
+							else {
+								x.type = "password"
+							}
+						}
+						// user_input
+						// function myFunction() {
+						// 	document.getElementById('user_login').submit(required);
+						// }
+					</script>
+
+		    </div>
+		    <div class="modal-footer">
+		      	<a href="" target="_blank" class="new_acc">
+		      		<p style="text-decoration: none; color: white; font-family: arial; font-size: 12px; margin: 8px 0px 8px 0px;">Are you new? Create a free account to stay updated</p>
+		      	</a>
+		    </div>
+		  </div>
+		</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			  modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+			    modal.style.display = "block";
+			  }
+			}
+		</script>
+
 	</div>
 	
 	<div class="landing_page" id="home_part">

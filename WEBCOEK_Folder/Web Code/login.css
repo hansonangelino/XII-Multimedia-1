@@ -1,0 +1,42 @@
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 16px 0px 16px 0px;
+	background-color: white;
+}
+input.form {
+	width: auto;  /*fixing width input*/
+}
+form p{
+	font-family: arial;
+	margin: 0!important;
+	font-size: 16px;
+	padding-bottom: 0px;
+}
+hr {
+	border-style: none;
+}
+.button {
+	border-radius: 0px;
+	border-style: none;
+	width: 140px;
+	padding: 4px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+.button:hover {
+	transition: 0.25s;
+	background-color: #001d26;
+	color: white;
+}
+.showpass {
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+.hide_pass {
+	margin-top: 4px;
+} 
+.new_acc {
+	display: inline-block;
+}
