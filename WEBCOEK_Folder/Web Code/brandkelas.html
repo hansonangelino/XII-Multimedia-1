@@ -39,45 +39,37 @@
 		  <div class="modal-content">
 		    <div class="modal-header">
 		      <span class="close" style="margin-top: 8px;">&times;</span>
-		      <h2 style="letter-spacing: 1px;">Hi there, what's your name?</h2>
+		      <h2 style="letter-spacing: 1px; margin: 8px 0px">Branding Explanation</h2>
 		    </div>
 		    <div class="modal-body">
-					<div class="box">
-						<form action="index.html" autocomplete="off" id="user_login">
-							<p>Username</p>
-							<input type="text" name="Name" placeholder="your name" class="form" required="name" style="margin-top: 8px">
-							<p style="padding-top: 16px">Password</p>
-							<input type="password" name="Password" placeholder="example@abc123" id="user_pass" class="form" required="pass" style="margin-top: 8px">
-							<div class="hide_pass">
-								<p onclick="showPass()" class="showpass" style="; font-size: 12px; opacity: 50%">Show/Hide password</p>
-							</div>
-							<input type="submit" class="button" value="Login" onclick="myFunction()">
-						</form>
-					</div>
+				<div class="slideshow-container">
 
-					<script>
-						// pass_hider
-						function showPass() {
-							var x =
-							document.getElementById('user_pass');
-							if (x.type === "password") {
-								x.type = "text";
-							}
-							else {
-								x.type = "password"
-							}
-						}
-						// user_input
-						// function myFunction() {
-						// 	document.getElementById('user_login').submit(required);
-						// }
-					</script>
+				  <div class="mySlides fade">
+				    <img src="Asset 3.png" style="width:100%">
+				  </div>
 
-		    </div>
-		    <div class="modal-footer">
-		      	<a href="" target="_blank" class="new_acc">
-		      		<p style="text-decoration: none; color: white; font-family: arial; font-size: 12px; margin: 8px 0px 8px 0px;">Are you new? Create a free account to stay updated</p>
-		      	</a>
+				  <div class="mySlides fade">
+				    <img src="Asset 1.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+				    <img src="Asset 4.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides fade">
+				    <img src="Asset 1.png" style="width:100%">
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)" style="margin: 4px 0px 4px 0px"></span>
+				  <span class="dot" onclick="currentSlide(2)" style="margin: 4px 0px 4px 0px"></span>
+				  <span class="dot" onclick="currentSlide(3)" style="margin: 4px 0px 4px 0px"></span>
+				  <span class="dot" onclick="currentSlide(4)" style="margin: 4px 0px 4px 0px"></span>
+				</div>
 		    </div>
 		  </div>
 		</div>
@@ -108,8 +100,36 @@
 			    modal.style.display = "block";
 			  }
 			}
-		</script>
 
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
 	</div>
 	
 	<div class="landing_page" id="home_part">
@@ -120,7 +140,7 @@
 <!-- 				<p style="font-size: 100px">tot yu</p> -->
 			<p id="headline" style="margin: 0"><b>Our Brands!</b></p>
 			<p style="font-family:Helvetica; font-size: 18px">Temuilah merek-merek minuman kreatif yang <br>unik, lezat dan beda dari yang lain</p>
-			<a href="#biodata_part" class="button"><b>Explore now</b></a>
+			<div class="button" style="cursor: pointer;"><b>Explore now</b></div>
 		</div>
 	</div>
 </body>

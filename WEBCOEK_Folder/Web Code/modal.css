@@ -2,7 +2,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 100; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 24px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -17,9 +17,7 @@
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 50%;
-  border: 0.25px solid#001d26;
+  width: 68%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.75s;
@@ -46,26 +44,24 @@
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #707070;
   text-decoration: none;
   cursor: pointer;
 }
-
 .modal-header {
   font-family: arial;
   padding: 2px 16px;
   background-color: #001d26;
   color: white;
 }
-
-.modal-body {
-  padding: 2px 16px;
+.box img{
+  width: 100%;
+  display: block;
 }
-.modal-footer {
+/*.modal-footer {
   padding: 2px 16px;
   background-color: #001d26;
   color: #00c8ff;
-}
+}*/

@@ -1,26 +1,26 @@
 a.button:hover {
-	opacity: 50%;
 	transition: 0.25s;
+	box-shadow: 0px 0px 15px #ffa304, 0px 0px 7.5px #ff158b;
 }
 a.button_bio:hover {
-	opacity: 50%;
 	transition: 0.25s;
+	box-shadow: 0px 0px 15px #ffa304, 0px 0px 7.5px #ff158b;
 }
 a.button_portfolio:hover {
-	opacity: 50%;
 	transition: 0.25s;
+	box-shadow: 0px 0px 15px #ffa304, 0px 0px 7.5px #ff158b;
 }
 .about_map img:hover {
 	opacity: 75%;
 	transition: 0.25s;
 }
 .about_menu_item:hover {
-	opacity: 50%;
 	transition: 0.25s;
+	box-shadow: 0px 0px 15px #2B84DE, 0px 0px 7.5px #503C9C;
 }
 .button_submit:hover {
-	opacity: 50%;
 	transition: 0.25s;
+	box-shadow: 0px 0px 30px #FFFFFF, 0px 0px 10px #FFFFFF;
 }
 .brand:hover {
 	box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.10),
