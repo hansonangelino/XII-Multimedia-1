@@ -4,7 +4,6 @@
 	<link rel="stylesheet" href="brandkelas.css">
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="hover.css">
-	<link rel="stylesheet" href="login.css">
 	<link rel="stylesheet" href="modal.css">
 	<link rel="icon" href="logo.png">
 	<title>XII MULTIMEDIA 1</title>
@@ -22,16 +21,16 @@
 
 	<div class="brand_all">
 		<div class="brand_pic">
-			<img src="Slurpy.png" alt="" id="myBtn">
+			<img src="Slurpy.png" alt="">
 		</div>
 		<div class="brand_pic">
-			<img src="untukamoo.png" alt="" id="myBtn">
+			<img src="untukamoo.png" alt="">
 		</div>
 		<div class="brand_pic">
-			<img src="Sepoi.png" alt="" id="myBtn">
+			<img src="Sepoi.png" alt="">
 		</div>
 		<div class="brand_pic">
-			<img src="Jelly.png" alt="" id="myBtn">
+			<img src="Jelly.png" alt="">
 		</div>
 
 		<div id="myModal" class="modal">
@@ -73,63 +72,6 @@
 		    </div>
 		  </div>
 		</div>
-
-		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			  modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			  modal.style.display = "none";
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			  if (event.target == modal) {
-			    modal.style.display = "block";
-			  }
-			}
-
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			// Next/previous controls
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			// Thumbnail image controls
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
-			  var dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-			      slides[i].style.display = "none";
-			  }
-			  for (i = 0; i < dots.length; i++) {
-			      dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			}
-		</script>
 	</div>
 	
 	<div class="landing_page" id="home_part">
@@ -140,8 +82,65 @@
 <!-- 				<p style="font-size: 100px">tot yu</p> -->
 			<p id="headline" style="margin: 0"><b>Our Brands!</b></p>
 			<p style="font-family:Helvetica; font-size: 18px">Temuilah merek-merek minuman kreatif yang <br>unik, lezat dan beda dari yang lain</p>
-			<div class="button" style="cursor: pointer;"><b>Explore now</b></div>
+			<div class="button" style="cursor: pointer" id="myBtn"><b>Learn more</b></div>
 		</div>
 	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "block";
+		  }
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
 </body>
 </html>
